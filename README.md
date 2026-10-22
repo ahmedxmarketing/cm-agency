@@ -1,8 +1,9 @@
 # CM Agency
 
-موقع CM Agency — ميديا باينج، فيديوهات إعلانية وموشن جرافيك.
+موقع CM Agency — خدمتين، كل واحدة في صفحة لوحدها:
 
-- الموقع: https://ahmedxmarketing.github.io/cm-agency/
-- شغلنا: https://ahmedxmarketing.github.io/cm-agency/work/
+- الرئيسية: https://ahmedxmarketing.github.io/cm-agency/
+- إزالة الضريبة: https://ahmedxmarketing.github.io/cm-agency/tax/
+- ميديا باير وتسويق (فيديوهات وإعلانات): https://ahmedxmarketing.github.io/cm-agency/work/
 
 📞 01044360405 · Instagram @CM_AGENCY.MARKTING
