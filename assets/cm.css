@@ -131,3 +131,52 @@ h1,h2,h3{line-height:1.25}
 .cta p{color:var(--silver);font-weight:700;margin:0 0 16px}
 .cross{display:block;text-align:center;margin:26px auto 0;color:var(--silver);font-weight:700;text-decoration:none}
 .cross b{color:var(--sky)}
+
+/* section tabs (inner pages) */
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;max-width:1100px;margin:14px auto 0;padding:0 14px}
+.tabs a{font-weight:800;font-size:15px;color:var(--silver);text-decoration:none;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:7px 14px;border-radius:99px;white-space:nowrap}
+.tabs a:hover{color:#fff;border-color:var(--blue)}
+.tabs a[aria-current]{color:#fff;background:var(--blue);border-color:var(--blue)}
+@media (max-width:440px){.tabs{gap:6px;padding:0 8px}.tabs a{font-size:13.5px;padding:6px 9px}}
+.foot .links{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 18px;font-weight:700;font-size:15px;margin-bottom:12px}
+.foot .links a{color:var(--sky);text-decoration:none}
+.foot .links a:hover{color:#fff}
+@media (min-width:820px){.services.three{grid-template-columns:repeat(3,1fr);max-width:1100px}}
+.svc .num{position:absolute;top:22px;left:20px;font-size:13px;font-weight:800;color:var(--sky)}
+/* price terms tags */
+.price{flex-wrap:wrap}
+.price .tag{flex-basis:100%;display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:14px;font-weight:800;padding:6px 12px;border-radius:99px;text-align:center;line-height:1.35;
+  color:#fff;background:linear-gradient(135deg,var(--blue2),var(--blue))}
+.price .tag--split{color:#0a0f1a;background:linear-gradient(135deg,#e9edf2,var(--silver))}
+.price .tag svg{width:16px;height:16px;flex:none}
+@media (min-width:640px){.price .tag{flex-basis:auto}}
+.terms{display:grid;gap:8px;max-width:520px;margin:14px auto 0}
+.terms p{margin:0;display:flex;gap:10px;align-items:baseline;justify-content:center;flex-wrap:wrap;font-weight:700;color:var(--silver);text-align:center}
+.terms b{color:#fff}
+/* ads stats */
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px;margin:24px auto 0}
+@media (min-width:820px){.stats{grid-template-columns:repeat(4,1fr);max-width:1000px}}
+.stat{background:linear-gradient(160deg,#0f1622,#07090d 75%);border:1.5px solid rgba(30,144,255,.38);border-radius:22px;padding:16px 12px;text-align:center}
+.stat b{display:block;direction:ltr;font-size:clamp(28px,8.4vw,38px);font-weight:800;line-height:1.15;color:#fff;
+  background:linear-gradient(180deg,#fff 40%,var(--silver));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat strong{display:block;font-size:17px;font-weight:800;color:var(--sky);margin-top:2px}
+.stat span{display:block;font-size:14px;font-weight:700;color:var(--silver2);margin-top:4px;line-height:1.4}
+.stat span bdi{color:var(--silver)}
+/* results masonry */
+.masonry{columns:2;column-gap:10px;max-width:1100px;margin:0 auto}
+@media (min-width:760px){.masonry{columns:3;column-gap:14px}}
+@media (min-width:1100px){.masonry{columns:4}}
+.shot{display:block;width:100%;break-inside:avoid;margin:0 0 10px;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0b0d11;cursor:zoom-in;transition:border-color .15s,transform .15s}
+@media (min-width:760px){.shot{margin-bottom:14px}}
+.shot:hover{border-color:var(--blue);transform:translateY(-2px)}
+.shot img{display:block;width:100%;height:auto}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:56px 10px 70px}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.8)}
+.lb button{position:absolute;border:0;cursor:pointer;color:#fff;background:rgba(30,144,255,.9);width:46px;height:46px;border-radius:50%;font:800 22px/1 "Tajawal",sans-serif;display:grid;place-items:center}
+.lb .x{top:12px;left:12px;background:rgba(255,255,255,.14)}
+.lb .nx{bottom:14px;left:calc(50% - 56px)}
+.lb .pv{bottom:14px;left:calc(50% + 10px)}
+.lb .ct{position:absolute;top:22px;right:18px;color:var(--silver);font-weight:700;font-size:15px;direction:ltr}
+body.lb-on{overflow:hidden}
